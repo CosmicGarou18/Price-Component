@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+::-webkit-scrollbar{
+    display:none;
+}
+:root{
+    --Cyan: hsl(179, 62%, 43%); 
+    --BrightYellow: hsl(71, 73%, 54%);
+    --LightGray: hsl(204, 43%, 93%);
+    --GrayishBlue: hsl(218, 22%, 67%);
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+body{
+    min-height:100vh;
+    width:100%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background:var(--LightGray);
+}
+main{
+    height:65vh;
+    width:45vw;
+    display:flex;
+    flex-flow:row wrap;
+}
+.top{
+    flex-basis:100%;
+    background:white;
+    height: 50%;;
+    border-radius:10px 10px 0 0; 
+    padding:40px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    gap:15px;
+}
+.top>*{
+    height:fit-content;
+}
+.main-heading{
+    font-size:20px;
+    font-weight:700;
+    color:var(--Cyan)
+}
+.heading2{
+    font-size:16px;
+    font-weight:700;
+    color: var(--BrightYellow);
+}
+.text{
+    line-height: 25px;
+    color:var(--GrayishBlue);
+}
+.B-left,.B-right{
+    flex-basis:50%;
+    height:50%;
+}
+.B-left{
+    background:var(--Cyan);
+    border-radius:0 0 0 10px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    padding:40px;
+}
+.B-left>*{
+    display:flex;
+    height:fit-content;
+}
+.heading3{
+    font-size:16px;
+    font-weight:700;
+    color:white;
+}
+.price{
+    font-size:30px;
+    font-weight:700;
+    color:white;
+}
+.cost{
+    gap:10px;
+}
+.cost>*{
+    display:flex;
+}
+.per{
+    align-items:center;
+    color:hsl(180, 70%, 83%);
+    font-size:15px;
+}
+.text2{
+    color:white;
+    font-size:15px;
+}
+.button{
+    background-color: var(--BrightYellow);
+    justify-content:center;
+    line-height: 50px;
+    border-radius:5px;
+    color:white;
+    font-weight: 700;
+}
+
+.B-right{
+    background:hsl(179, 47%, 52%);
+    border-radius:0 0 10px 0;
+    padding:30px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+.heading4{
+    font-size:20px;
+    font-weight:700;
+    color:white;
+}
+.text3{
+    color: hsl(180, 70%, 83%);
+    font-size:14px;
+    line-height:20px;
+    width:80%;
+}
+
